@@ -1,0 +1,372 @@
+/*edited
+==============
+bootstrap.css line 4209,
+
+*/
+/*fonts
+===================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+
+*{
+	-webkit-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+a:link{
+	text-decoration: none !important;
+}
+a:hover{
+	text-decoration: none !important;
+}
+a:active{
+	text-decoration: none !important;
+}
+
+a:visited{
+	text-decoration: none !important;
+}
+
+/*header
+===================*/
+header div.socialbar{
+	background-color: #333333;
+	color:#fff;
+}
+header div.socialbar div.social-items a{
+	border-left:solid 1px #888888;
+	padding:10px 15px;
+	color:#888888;
+	display: inline-block;
+}
+header div.socialbar div.social-items a:last-child{
+	border-right:solid 1px #888888;
+}
+
+header div.socialbar div.social-items a:hover{
+	color:#21c2f8;
+}
+header div.socialbar div.contact-items{
+	text-align: right;
+	line-height: 2.5;
+	color:#888888;
+}
+header div.socialbar div.contact-items span{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*navbar
+=========================*/
+nav.navbar{
+	height: 90px;
+	border:none;
+	background:#fff;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+nav.navbar div.navbar-header{
+	height: 90px;
+}
+
+/*navbar brand style*/
+nav.navbar div.navbar-header a.navbar-brand{
+	margin-left:0px;
+}
+nav.navbar div.navbar-header a.navbar-brand img{
+	display: inline-block;
+	margin-top:-30px;
+	margin-right: 7px;
+}
+nav.navbar div.navbar-header a.navbar-brand span{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	display: inline-block;
+	line-height: 1.2;
+	font-size: 24px
+}
+
+/*navbar menu item style*/
+nav.navbar div.collapse ul.nav li.active a{
+	height: 88px;
+	border-bottom:solid 2px #21c2f8;
+	background-color:#f6f6f6;
+}
+nav.navbar div.collapse ul.nav li a{
+	
+	height: 90px;
+	line-height: 4;
+	font-family: 'Open Sans', sans-serif;
+}
+nav.navbar div.collapse ul.nav li a:hover{
+	background-color:#f6f6f6;
+	height: 88px;
+	border-bottom:solid 2px #21c2f8;
+}
+
+/*media query....*/
+@media screen and (max-width: 767px) {
+	header div.socialbar{
+		display: none;
+	}
+	nav.navbar{
+		height: auto;
+		background:#c1c1c1;
+	}
+	nav.navbar button{
+		margin-top:30px;
+	}
+	nav.navbar div.collapse ul.navbar-nav{
+		/*margin:0px -15px;*/
+	}
+	nav.navbar div.collapse ul.nav li a{
+		height: 40px;
+		line-height: 20px;
+	}
+	nav.navbar div.collapse ul.nav li a:hover{		
+		height: 40px;	
+		border:none;	
+	}
+	nav.navbar div.collapse ul.nav li.active a{
+		height: 40px;
+		border:none;
+	}
+
+}
+
+/*carousel
+==========================*/
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#owl-demo .owl-buttons .owl-prev, 
+#owl-demo .owl-buttons .owl-next{
+	width:60px;
+	height: 61px;
+	line-height: 1.9;
+	font-size: 25px;
+	border-radius: 0px;
+	margin-left:0px;
+	background:#000;
+	opacity: 0.3;
+	color:#fff;
+}
+#owl-demo .owl-buttons .owl-prev i, 
+#owl-demo .owl-buttons .owl-next i{
+	color:#fff;
+}
+#owl-demo .owl-buttons .owl-next{
+	margin-right:0px;
+}
+#owl-demo .owl-prev{
+	position: absolute;
+	left:0;
+	top:35%;
+}
+#owl-demo .owl-next{
+	position: absolute;
+	right:0;
+	top:35%;
+}
+section.my_carousel div#owl-demo div.item_one{
+	background:url('../img/item1.jpg') center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+section.my_carousel div#owl-demo div.item_two{
+	background:url('../img/item2.jpg') center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+section.my_carousel div#owl-demo div.item_three{
+	background:url('../img/item3.jpg') center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+section.my_carousel div#owl-demo div.item_four{
+	background:url('../img/item4.jpg') center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6{
+	margin:130px 0px;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6 a{
+	color:#fff;
+	padding:10px 10px;
+	background-color:#21c2f8;
+	border-radius: 0px;
+	border:none;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6 h2{
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	color:#000;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6 div.item_one_info h2:nth-child(2) {
+	color:#000;
+	margin:20px 0px;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6 p.item_one_text{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 2;
+	margin:10px 0px 30px;
+	color:#000;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6 a{
+	text-transform: capitalize;
+	font-family: 'Lato', sans-serif;
+}
+section.my_carousel div.owl-theme .owl-controls .owl-page span{
+	border:solid 1px #21c2f8;
+	width: 15px;
+	height: 15px;
+	margin:0px 12px;
+	background-color:rgba(0, 0, 0, 0);
+}
+section.my_carousel div.owl-theme .owl-controls .owl-page span::after{
+	content:"";
+	display: inline-block;
+	width: 15px;
+	height: 1px;
+	background:#21c2f8;
+	position: absolute;
+	margin-left:12px;
+	margin-right:10px;
+	margin-top:6px;
+}
+section.my_carousel div.owl-theme .owl-controls .owl-page:last-child span:after{
+	display: none;
+}
+section.my_carousel div.owl-theme .owl-controls .owl-page:hover span{
+	background:#21c2f8;
+}
+section.my_carousel div.owl-theme .owl-controls .active span{
+	background:#21c2f8;
+	/*padding:1px;*/
+}
+section.my_carousel div.owl-theme .owl-controls{
+	margin-top:0px;
+}
+section.my_carousel div.owl-theme .owl-controls .owl-pagination{
+	margin-top:-30px;
+	position: relative;
+}
+
+/*my_feature
+=====================*/
+section.my_feature{
+	padding:40px 0px;
+}
+section.my_feature h2{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+section.my_feature h2::after{
+	content:"";
+	display: block;
+	text-align: center;
+	margin:25px auto 0px;
+	width: 319px;
+	height: 10px;
+	background-image:url('../img/header_divider.png');
+}
+section.my_feature div.feature_items{
+	margin:50px 0px;
+}
+section.my_feature div.feature_items div.col-lg-3 p.feature_image span{
+	width: 95px;
+	height: 95px;
+	line-height: 80px;
+	border-radius: 100%;
+	background-color:#2a3237;
+	border:solid 5px #21c2f8;
+	display: inline-block;
+}
+section.my_feature div.feature_items div.col-lg-3 h3{
+	margin-top:45px;
+}
+section.my_feature div.feature_items div.col-lg-3 h3 a{
+	color:#31353d;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: capitalize;
+}
+section.my_feature div.feature_items div.col-lg-3 h3 a:hover{
+	text-decoration: none;
+	color:#21c2f8;
+}
+
+
+section.my_feature div.feature_items div.col-lg-3 p.feature_text span{
+	color:#808080;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
+/*accordion
+===================*/
+section.my_service{
+	border-top:solid 1px #e5e5e5;
+	border-bottom:solid 1px #e5e5e5;
+	margin:10px 0px;
+	padding:20px 0px;
+	background:#fcfcfc;
+}
+section.my_service div.col-lg-3 h2{
+	font-family: 'Open Sans', sans-serif;
+	text-transform: capitalize;
+	color:#333333;
+	padding-left:3px;
+}
+section.my_service h2::after{
+	content:"";
+	display: block;
+	margin-top: 15px;
+	margin-left:-3px;
+	margin-bottom: 40px;
+	width: 272px;
+	height: 10px;
+	background-image:url('../img/our_values.png');
+}
+.panel-group .panel{
+	color:#808080;
+	border:none;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	width:272px;
+	margin-bottom:10px;
+}
+div.panel div.panel-heading{
+	border-radius: 0px;
+	background:#f2f2f2;
+	border-left:solid 2px #21c2f8;
+	padding:0px;
+}
+div.panel div.panel-heading a{
+	font-family: 'Open Sans', sans-serif;
+	text-transform: capitalize;
+	display: block;
+	padding:10px 15px;
+} 
+div.panel div.panel-heading a:hover{
+	text-decoration: none;
+}
+div.panel div.panel-body{
+	border-radius: 0px;
+	background:#fff;
+	font-size: 13px;
+	padding:15px 0px;
+	line-height: 1.7;
+}
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+    border-top: 0px solid #fff;
+}

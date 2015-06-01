@@ -1,0 +1,219 @@
+/*fonts
+===================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+
+*{
+	-webkit-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+
+/*header
+===================*/
+header div.socialbar{
+	background-color: #333333;
+	color:#fff;
+}
+header div.socialbar div.social-items a{
+	border-left:solid 1px #888888;
+	padding:10px 15px;
+	color:#888888;
+	display: inline-block;
+}
+header div.socialbar div.social-items a:last-child{
+	border-right:solid 1px #888888;
+}
+
+header div.socialbar div.social-items a:hover{
+	color:#21c2f8;
+}
+header div.socialbar div.contact-items{
+	text-align: right;
+	line-height: 2.5;
+	color:#888888;
+}
+header div.socialbar div.contact-items span{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*navbar
+=========================*/
+nav.navbar{
+	/*height: 90px;*/
+	border:none;
+	background:#fff;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+nav.navbar div.navbar-header{
+	/*height: 90px;*/
+}
+
+/*navbar brand style*/
+nav.navbar div.navbar-header a.navbar-brand{
+	/*margin-left:0px;*/
+}
+nav.navbar div.navbar-header a.navbar-brand img{
+	/*display: inline-block;
+	margin-top:-30px;
+	margin-right: 7px;*/
+}
+nav.navbar div.navbar-header a.navbar-brand span{
+	/*font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	display: inline-block;
+	line-height: 1.2;
+	font-size: 24px;*/
+}
+
+/*navbar menu item style*/
+nav.navbar div.collapse ul.nav li.active a{
+	/*height: 88px;
+	border-bottom:solid 2px #21c2f8;
+	background-color:#f6f6f6;*/
+}
+nav.navbar div.collapse ul.nav li a{
+	
+	/*height: 90px;
+	line-height: 4;
+	font-family: 'Open Sans', sans-serif;*/
+}
+nav.navbar div.collapse ul.nav li a:hover{
+	/*background-color:#f6f6f6;
+	height: 88px;
+	border-bottom:solid 2px #21c2f8;*/
+}
+
+/*media query....*/
+@media screen and (max-width: 767px) {
+	/*nav.navbar{
+		background:#c1c1c1;
+	}
+	nav.navbar button{
+		margin-top:30px;
+	}
+	nav.navbar div.collapse ul.navbar-nav{
+		margin:0px -15px;
+	}
+	nav.navbar div.collapse ul.nav li a{
+		height: 40px;
+		line-height: 20px;
+	}
+	nav.navbar div.collapse ul.nav li a:hover{		
+		height: 40px;	
+		border:none;	
+	}
+	nav.navbar div.collapse ul.nav li.active a{
+		height: 40px;
+		border:none;
+	}*/
+
+}
+
+/*carousel
+==========================*/
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#owl-demo .owl-buttons .owl-prev, 
+#owl-demo .owl-buttons .owl-next{
+	width:60px;
+	height: 61px;
+	line-height: 1.9;
+	font-size: 25px;
+	border-radius: 0px;
+	margin-left:0px;
+	background:#000;
+	opacity: 0.3;
+	color:#fff;
+}
+#owl-demo .owl-buttons .owl-prev i, 
+#owl-demo .owl-buttons .owl-next i{
+	color:#fff;
+}
+#owl-demo .owl-buttons .owl-next{
+	margin-right:0px;
+}
+#owl-demo .owl-prev{
+	position: absolute;
+	left:0;
+	top:35%;
+}
+#owl-demo .owl-next{
+	position: absolute;
+	right:0;
+	top:35%;
+}
+section.my_carousel div#owl-demo div.item_one{
+	background:url('../img/item1.jpg') center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+section.my_carousel div#owl-demo div.item_two{
+	background:url('../img/item2.jpg') center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+section.my_carousel div#owl-demo div.item_three{
+	background:url('../img/item3.jpg') center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+section.my_carousel div#owl-demo div.item_four{
+	background:url('../img/item4.jpg') center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6{
+	margin:130px 0px;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6 h2{
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	color:#000;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6 div.item_one_info h2:nth-child(2) {
+	color:#000;
+	margin:20px 0px;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6 p.item_one_text{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 2;
+	margin:10px 0px 30px;
+	color:#000;
+}
+section.my_carousel div#owl-demo div.item div.col-lg-6 a{
+	text-transform: capitalize;
+	font-family: 'Lato', sans-serif;
+}
+section.my_carousel div.owl-theme .owl-controls .owl-page span{
+	border:solid 1px #21c2f8;
+	width: 15px;
+	height: 15px;
+	background-color:rgba(0, 0, 0, 0);
+}
+section.my_carousel div.owl-theme .owl-controls .owl-page:hover span{
+	background:#21c2f8;
+}
+section.my_carousel div.owl-theme .owl-controls .active span{
+	background:#21c2f8;
+	padding:1px;
+}
+section.my_carousel div.owl-theme .owl-controls{
+	margin-top:0px;
+}
+section.my_carousel div.owl-theme .owl-controls .owl-pagination{
+	margin-top:-30px;
+	position: relative;
+}
