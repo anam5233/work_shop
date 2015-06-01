@@ -1,0 +1,6 @@
+db name = image_gallary
+
+table name = image_item
+
+table fields	1.img_id	2.img_item	3.img_title
+	
