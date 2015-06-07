@@ -1,0 +1,21 @@
+label{text-transform: capitalize; padding-left:10px;}
+section div.row{
+	margin:20px 0px;
+}
+
+section div.row input.form-control,
+section div.row textarea.form-control,
+section div.row select.form-control{
+	display: inline;
+	width:50%;
+	/*float:left;	*/
+}
+header a {
+	margin:5px 0px 0px;
+}
+header form {
+	margin:10px 0px;
+}
+header form input.form-control{
+	width:205px !important;
+}

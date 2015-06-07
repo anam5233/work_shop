@@ -24,8 +24,14 @@
 
 	<?php 
 		include "db.php";
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			$search_date = $_POST['search'];
+		}
 
-		$show_result = mysqli_query($con, "SELECT * FROM data_input");
+		$show_result = mysqli_query($con, "SELECT * FROM data_input where input_date = '$search_date' ");
+		// var_dump($show_result);
+		$row_count = mysqli_num_rows($show_result);
+		// echo $row_count;
 
 		if ($show_result){
 			?> 
@@ -41,6 +47,18 @@
 					<th>person</th>
 				</tr>		
 			<?php
+		
+			
+			if ($row_count === 0) {?>
+
+			<tr>
+				<td colspan="6">
+					<?php echo "no data found"; ?>
+				</td>
+			</tr>
+				<?php
+			}
+			
 		}
 		while($row = mysqli_fetch_object($show_result)){?>
 			<tr>
@@ -59,19 +77,7 @@
 
 		}?>
 		</table>
-		<?php 
-			$sum = 0;
-			$new_result = mysqli_query($con, "SELECT input_cost FROM data_input");
-			// $sum = 0;
-			while ($new = mysqli_fetch_array($new_result)) {
-
-				$sum += $new['input_cost'];
-			}
-				
-			echo "<h2> total cost of this month is $".$sum. "</h2>";
-
-		 ?>
-		 <br>
+		
 		<a href="index1.php" class="btn btn-default">Back</a>
 		<?php
 
