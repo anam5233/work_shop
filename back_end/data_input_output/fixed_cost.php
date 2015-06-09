@@ -12,11 +12,12 @@
 	<header>
 		<div class="jumbotron text-center">
 			<div class="container">
-				<h2>Monthly purchase diary</h2>
-				<a href="result.php" class="btn btn-primary">Month info</a>
-				<a href="fixed_cost.php" class="btn btn-info">Fixed cost</a>
-				<form action="search1.php" method="post" class="form-inline">
-					<input type="search" name="search" class="form-control" id="search" required placeholder="search by date (01/01/2015)">
+				<h2>Fixed cost</h2>
+				
+				<a href="fixed_cost_result.php" class="btn btn-info">Show this month info</a>
+				<a href="index1.php" class="btn btn-success">Home</a>
+				<form action="fixed_cost_search.php" method="post" class="form-inline">
+					<input type="text" name="name" class="form-control" id="name" required placeholder="search by name)">
 					<input type="submit" value="Search" class="btn btn-default">
 				</form>
 			</div>
@@ -24,7 +25,7 @@
 	</header>
 
 	<section>
-		<?php include "function.php"; ?>
+		<?php include "fixed_cost_function.php"; ?>
 		<div class="container">
 			<div class="row">
 				
